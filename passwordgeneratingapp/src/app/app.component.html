@@ -5,21 +5,22 @@
 </div>
 <div>
   <label>Use Letters</label>
-  <input type = "checkbox" />
+  <input type = "checkbox" (change) = "onChangeUseLetters()"/>
 </div>
 <div>
   <label>Use Numbers</label>
-  <input type = "checkbox" />
+  <input type = "checkbox" (change) = "onChangeUseNumbers()"/>
 </div>
 <div>
   <label>Use Symbols</label>
-  <input type = "checkbox" />
+  <input type = "checkbox" (change) = "onChangeUseSymbols()" />
 </div>
 <div>
   <button (click)= "onButtonClick()">Generate !</button>
 </div>
 <div>
   <label>Your Password</label>
-  <input type = "text" [value]= "password()"/>
+  <input type = "text" [value]= "password"/>
 </div>
+
 
