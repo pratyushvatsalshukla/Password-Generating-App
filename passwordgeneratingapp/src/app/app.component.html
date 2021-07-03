@@ -1,7 +1,7 @@
 <h1>Password Generator</h1>
 <div>
   <label>Enter Length</label>
-  <input/>
+  <input (change) = "onChangeLength($event)"/>
 </div>
 <div>
   <label>Use Letters</label>
@@ -16,11 +16,11 @@
   <input type = "checkbox" (change) = "onChangeUseSymbols()" />
 </div>
 <div>
-  <button (click)= "onButtonClick()">Generate !</button>
+  <button [disabled]= "!(length && (includeNumbers || includeLetters || includeSymbols))" (click)= "onButtonClick()">Generate !</button>
 </div>
 <div>
   <label>Your Password</label>
-  <input type = "text" [value]= "password"/>
+  <input type = "text" [value]= "getPassword()"/>
 </div>
 
 
