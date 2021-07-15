@@ -36,7 +36,7 @@ export class AppComponent {
 
   onButtonClick(){
     const numbers = '1234567890' ;
-    const letters = 'qwertyuioplkjhgfdsazxcvbnm' ;
+    const letters = 'qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM' ;
     const symbols = '!@#$%^&*(){}":?><,./;[]' ;
 
     let validChars = '' ;
